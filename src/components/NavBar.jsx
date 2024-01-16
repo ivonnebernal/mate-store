@@ -7,13 +7,18 @@ import {
     Flex, Box, Spacer
 } from '@chakra-ui/react'
 import { CartWidget } from './CartWidget'
+import { Link } from 'react-router-dom'
 export const NavBar = () => {
+    
     return (
     <div >
         <Flex justify={'space-between'} bg= 'green.100'>
             <Menu >
                 <Box p='4' >
-                    <h3>Mates C&R</h3>
+                    <Link to={"/"}>
+                        <h3>Mates C&R</h3>
+                    </Link>
+                    
                 </Box>
                 <Box p='4' >
                     
@@ -21,9 +26,10 @@ export const NavBar = () => {
                         Categorias
                     </MenuButton>
                     <MenuList>
-                        <MenuItem>Mates</MenuItem>
-                        <MenuItem>Termos</MenuItem>
-                        <MenuItem>Bombillas</MenuItem>
+                        <Link ><MenuItem>men's clothing</MenuItem></Link>
+                        
+                        <MenuItem>jewelery</MenuItem>
+                        <MenuItem>electronics</MenuItem>
                     </MenuList>
                 </Box>
                 <Box p='4'>

@@ -6,7 +6,7 @@ export const CartWidget = () => {
     <div>
         <Flex>
             <Box>
-            <span class="material-symbols-outlined">
+            <span className="material-symbols-outlined">
                 shopping_cart
             </span>
             </Box>
